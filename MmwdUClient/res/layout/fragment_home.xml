@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_caption_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/select_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_transparent_to_half"
+            android:drawablePadding="@dimen/medium_margin"
+            android:drawableRight="@drawable/icon_arrows_down"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_margin"
+            android:text="@string/select_city"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/large_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:src="@drawable/top_caption_logo" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/zone_message"/>
+
+    <!-- Main content -->
+    <LinearLayout
+        android:id="@+id/main_content_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/zone_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_no_top_border"
+            android:orientation="horizontal"
+            android:padding="@dimen/normal_margin" >
+
+            <TextView
+                android:id="@+id/current_zone_text"
+                style="@style/NormalText"
+                android:drawableLeft="@drawable/ic_location"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:drawablePadding="@dimen/medium_margin"
+                android:text="@string/find_current_zone_inprog" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <android.support.v4.app.FragmentTabHost
+                    android:id="@android:id/tabhost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0" />
+                </android.support.v4.app.FragmentTabHost>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/selection_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--     done of main content -->
+
+</LinearLayout>

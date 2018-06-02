@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_caption_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_margin" >
+
+        <TextView
+            style="@style/LargeText"
+            android:text="我的"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/click_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:text="@string/dialog_login"
+        android:textSize="@dimen/large_text"
+        style="@style/BtnStyle1"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/user_already_login_zone"
+        style="@style/NormalClickableView"
+        android:layout_margin="@dimen/normal_margin"
+        android:background="@drawable/bg_pink_with_pink_border"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/login_txt"
+            style="@style/LargeText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0.1dp"
+            android:background="@drawable/bg_normal_dark"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="@dimen/large_margin"
+            android:text="@string/user_already_login" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mine_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:divider="@drawable/abc_list_divider_holo_light"
+        android:footerDividersEnabled="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_list_divider_holo_light" />
+
+</LinearLayout>

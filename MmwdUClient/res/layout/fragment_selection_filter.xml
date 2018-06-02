@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/selection_filter_radio_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background" >
+
+        <TextView
+            style="@style/NormalText"
+            android:padding="10dp"
+            android:text="按价格" />
+
+        <RadioGroup
+            android:id="@+id/filter_radio_group_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" />
+
+        <include layout="@layout/divider_line_horizontal" />
+
+        <TextView
+            style="@style/NormalText"
+            android:padding="10dp"
+            android:text="按种类" />
+
+        <RadioGroup
+            android:id="@+id/filter_radio_group_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/selection_filter_finish"
+            android:layout_width="match_parent"
+            android:layout_height="40.0dip"
+            android:layout_margin="10.0dip"
+            android:background="@drawable/bg_white_button"
+            android:text="@string/selection_filter_finish"
+            android:textColor="@color/main_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/selection_shadow_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/abc_list_selector_disabled_holo_dark" />
+
+</LinearLayout>

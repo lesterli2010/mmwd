@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zone_order_history_items"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grey_with_pink_border"
+        android:padding="@dimen/medium_margin" >
+
+        <ImageView
+            android:id="@+id/history_order_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_history_order" />
+
+        <TextView
+            android:id="@+id/history_order_text"
+            style="@style/NormalText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_toRightOf="@+id/history_order_img"
+            android:text="历史订单" />
+
+        <Button
+            android:id="@+id/history_order_more_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_button_1"
+            android:text="更多"
+            android:textColor="@color/button_text_color_1"
+            android:textSize="@dimen/normal_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_no_top_border" >
+
+        <ListView
+            android:id="@+id/history_order_item_compact_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:divider="@null"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+</LinearLayout>

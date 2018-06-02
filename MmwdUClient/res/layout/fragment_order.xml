@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_caption_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_margin" >
+
+        <TextView
+            style="@style/LargeText"
+            android:text="订单"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+    <!-- to use list in the future -->
+
+    <include
+        android:id="@+id/order_main_msg"
+        layout="@layout/zone_message" />
+
+    <LinearLayout
+        android:id="@+id/order_content_zone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/order_current_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/zone_message" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin"
+                layout="@layout/zone_order_items" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_history_zone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/zone_message" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                layout="@layout/zone_order_items_history_compact" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

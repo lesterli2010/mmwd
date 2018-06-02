@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_top_caption" />
+    
+    <include layout="@layout/zone_message" />
+    <ListView
+        android:id="@+id/favorite_mm_shop_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_with_grey_border"
+        android:layout_margin="@dimen/normal_margin"
+        android:divider="@drawable/abc_list_divider_holo_light" 
+        android:footerDividersEnabled="true"/>
+    </LinearLayout>

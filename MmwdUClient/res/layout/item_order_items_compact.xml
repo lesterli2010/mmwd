@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+compact order item, don't show each food's detail (which shows in item_order_items)
+display food name in one line
+it use view filler due to scroll issue
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/order_item_mm_shop_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_transparent_to_half"
+        android:paddingRight="@dimen/small_margin"
+        android:paddingLeft="@dimen/small_margin"
+        android:paddingTop="@dimen/medium_margin"
+        android:paddingBottom="@dimen/medium_margin" >
+
+        <ImageView
+            android:id="@+id/order_item_mm_shop_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_mm_shop" />
+
+        <TextView
+            android:id="@+id/order_item_mm_shop_name"
+            style="@style/NormalText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginLeft="@dimen/medium_margin" />
+
+        <TextView
+            android:id="@+id/order_item_food_names"
+            style="@style/MediumText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginLeft="@dimen/normal_margin" />
+
+        <TextView
+            android:id="@+id/order_item_mm_shop_total_money"
+            style="@style/MediumText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/default_text"
+            android:textColor="@color/main_color" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/order_item_dash_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dash_line_orange"
+        android:layerType="software" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_msg_zone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:id="@+id/error_msg_content_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/error_msg_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/error_msg_txt"
+            style="@style/NormalText"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:maxLines="3"
+            android:singleLine="false"
+            android:text="@string/default_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/error_msg_act_btn_1"
+                style="@style/BtnStyle1"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:text="@string/default_text" />
+
+            <Button
+                android:id="@+id/error_msg_act_btn_2"
+                style="@style/BtnStyle1"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:text="@string/default_text"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/error_msg_loading_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/error_msg_loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/main_loading"
+            android:minHeight="25.0dip"
+            android:minWidth="25.0dip" />
+
+        <TextView
+            android:id="@+id/error_msg_loading_txt"
+            style="@style/NormalText"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:text="@string/loading_inprog" />
+    </LinearLayout>
+
+</LinearLayout>

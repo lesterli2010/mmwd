@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+order item:
+display each food information like amount price, etc
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/order_item_mm_shop_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_transparent_to_half"
+        android:paddingRight="@dimen/medium_margin"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingTop="@dimen/small_margin"
+        android:paddingBottom="@dimen/small_margin" >
+
+        <ImageView
+            android:id="@+id/order_item_mm_shop_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mm_shop" />
+
+        <TextView
+            android:id="@+id/order_item_mm_shop_name"
+            style="@style/NormalText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_toRightOf="@id/order_item_mm_shop_img" />
+
+        <TextView
+            android:id="@+id/order_item_mm_shop_total_money"
+            style="@style/NormalText"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/default_text"
+            android:textColor="@color/main_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/order_food_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/order_item_dash_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dash_line_orange"
+        android:layerType="software" />
+
+</LinearLayout>

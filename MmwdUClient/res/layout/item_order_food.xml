@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- display in order detail for paied order, use can zan -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent_to_half"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/small_margin"
+    android:paddingLeft="@dimen/medium_margin"
+    android:paddingRight="@dimen/medium_margin"
+    android:paddingTop="@dimen/small_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_weight="5" >
+            <RelativeLayout
+                        android:id="@+id/food_zan_zone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_white_with_grey_border"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true" >
+
+                        <ImageView
+                            android:id="@+id/food_zan_img"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_margin="1.5dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_like_normal" />
+
+                        <TextView
+                            android:id="@+id/food_zan"
+                            android:layout_toRightOf="@id/food_zan_img"
+                            style="@style/MediumLittleBlackText"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="100" />
+                    </RelativeLayout>
+
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/order_food_name"
+        style="@style/NormalLittleBlackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_weight="4"
+        android:text="@string/default_text" />
+
+    <TextView
+        android:id="@+id/order_food_amount"
+        style="@style/NormalLittleBlackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/medium_margin"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/order_food_total_money"
+        style="@style/NormalLittleBlackText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/main_color" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/small_margin" >
+        <TextView
+            android:id="@+id/order_food_note"
+            style="@style/NormalLittleBlackText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:maxLines="3"
+            android:paddingTop="@dimen/small_margin"
+            android:paddingBottom="@dimen/small_margin"
+            android:gravity="right"
+            android:text="备注" />
+    </LinearLayout>
+
+</LinearLayout>

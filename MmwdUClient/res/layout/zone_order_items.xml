@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zone_order_items"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pink_with_pink_border"
+        android:padding="@dimen/medium_margin" >
+
+        <ImageView
+            android:id="@+id/order_status_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_order_status_init" />
+<!--  
+        <TextView
+            android:id="@+id/order_time"
+            style="@style/NormalText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_toRightOf="@+id/order_status_img"
+            android:text="@string/default_text" />
+-->
+        <TextView
+            android:id="@+id/order_status_txt"
+            style="@style/NormalText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_toRightOf="@+id/order_status_img"
+            android:text="@string/default_text" />
+
+        <TextView
+            android:id="@+id/order_total_money"
+            style="@style/NormalText"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:text="@string/default_text"
+            android:textColor="@color/main_color" />
+    </RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/order_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white_no_top_border" />
+</LinearLayout>

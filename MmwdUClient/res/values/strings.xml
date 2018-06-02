@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pre_defined_provinces">
+        <item>山东</item>
+        <item>辽宁</item>
+    </string-array>
+    
+    <string-array name="pre_defined_cities">
+        <item>青岛市</item>
+        <item>大连市</item>
+    </string-array>
+    
+    <!-- tmp -->
+    <string-array name="living_communities">
+        <item>百通馨苑一区</item>
+        <item>百通馨苑二区</item>
+        <item>伟东一区</item>
+    </string-array>
+    <!-- tmp -->
+    <string-array name="tab_names">
+        <item>首页</item>
+        <item>订单</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="main_select_content_type">
+        <item>最火妈妈</item>
+        <item>最热菜品</item>
+    </string-array>
+    <string-array name="mm_shop_select_content_type">
+        <item>今日上架</item>
+        <item>未上架</item>
+    </string-array>
+    <string-array name="order_status">
+        <item>未下单</item>
+        <item>已下单</item>
+        <item>已付款</item>
+        <item>烹饪中</item>
+        <item>烹饪完毕</item>
+        <item>配送中</item>
+        <item>已完成</item>
+        <item>已关闭</item>
+        <item>未知</item>
+    </string-array>
+    <string-array name="order_close_reason">
+        <item>未付款,超时关闭</item>
+        <item>暂时缺货</item>
+        <item>其他原因</item>
+    </string-array>
+
+    <string name="app_name">妈妈味道</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_fte">FteActivity</string>
+    <string name="quit_app_warning">再按一次退出~</string>
+    <string name="location_to_current">定位到当前位置</string>
+    <string name="location_inprog">定位中…</string>
+    <string name="select_city">选择城市</string>
+    <string name="locate_manually">手动定位</string>
+    <string name="order_settlement">确认订单</string>
+    <string name="hot_city">热门城市</string>
+    <string name="current_addr">当前位置</string>
+    <string name="located_city">定位城市</string>
+    <string name="hot_city_qingdao">青岛市</string>
+    <string name="hot_city_beijing">北京市</string>
+    <string name="select_zone_str">选择区域</string>
+    <string name="select_seq_str">默认排序</string>
+    <string name="select_filter_str">筛选</string>
+    <string name="selection_filter_finish">完成</string>
+    <string name="submit_order">提交订单</string>
+    <string name="default_text">默认文本</string>
+    <string name="loading_inprog">加载中~</string>
+    <string name="loading_inprog_hard">全力加载中，请稍候~</string>
+    <string name="loading_inprog_history_order">正在加载历史订单，请稍候~</string>
+    <string name="manage_shipping_address">管理收餐地址</string>
+    <string name="select_shipping_address">选择收餐地址</string>
+    <string name="add_new_shipping_address">新建收餐地址</string>
+    <string name="add_new_comment">新建意见反馈</string>
+    <string name="save_shipping_address">保存收藏地址</string>
+    <string name="save">保存</string>
+    <string name="add_new">创建</string>
+    <string name="edit_shipping_address_dialog_failure">抱歉，收餐地址不存在，无法修改</string>
+    <string name="current_version">当前版本: %1$s</string>
+    <string name="new_app_download_start">最新版本妈妈味道开始下载</string>
+    <string name="new_app_download_prog_text">%1$s(%2$s/%3$s)</string>
+    <string name="current_version_already_new">当前已是最新版本~</string>
+    <string name="title_activity_about_us">关于我们</string>
+    <string name="title_activity_comment">意见反馈</string>
+    <string name="title_activity_favorite_mm_shop">我的收藏</string>
+    <string name="title_activity_order_settlement">订单结算</string>
+    <string name="title_activity_localtion_manually">选择城市</string>
+    <string name="title_activity_order_detail">订单详情</string>
+    <string name="title_activity_order_history">历史订单</string>
+    <string name="title_activity_user_login">用户登录</string>
+    <string name="title_activity_user_information">账户信息</string>
+    <string name="title_activity_select_city_zone">选择区域</string>
+    <string name="title_activity_food_detail">菜品详情</string>
+    <string name="title_activity_select_settlement">购餐车</string>
+    <string name="msg_no_network">网络无连接，请检查网络并稍后重试~</string>
+    <string name="msg_no_data">抱歉，暂无数据，请稍后重试~</string>
+    <string name="msg_network_error">网络异常，请稍后重试~</string>
+    <string name="msg_network_data_error">网络数据异常，请稍后重试~</string>
+    <string name="msg_user_unauthorized">您还未登陆哦，请先登陆~</string>
+    <string name="msg_not_covered">抱歉，当前区域未覆盖，正在努力中~</string>
+    <string name="auto_location_succ_info">自动定位成功</string>
+    <string name="auto_location_fail_info">定位失败，请稍后重试~</string>
+    <string name="reload">重新加载</string>
+    <string name="manual_location">手动定位</string>
+    <string name="re_location">重新定位</string>
+    <string name="re_location_inprog">自动定位中，请稍候~</string>
+    <string name="food_price_title">价格:&#160;</string>
+    <string name="food_amount_title">剩余:&#160;</string>
+    <string name="order_create_address">新建收餐地址</string>
+    <string name="dialog_ok">确&#160;定</string>
+    <string name="dialog_save">保&#160;存</string>
+    <string name="dialog_cancel">取&#160;消</string>
+    <string name="dialog_create">创&#160;建</string>
+    <string name="dialog_modify">修&#160;改</string>
+    <string name="dialog_login">登&#160;录</string>
+     <string name="dialog_send">发&#160;送</string>
+     <string name="dialog_upgrade">升&#160;级</string>
+     <string name="dialog_send_inprog">发送中</string>
+    <string name="dialog_inprog">操作中</string>
+    <string name="dialog_login_inprog">登录中</string>
+    <string name="dialog_change_inprog">更换中</string>
+    <string name="dialog_modify_inprog">修改中</string>
+    <string name="dialog_add_inprog">创建中</string>
+    <string name="dialog_del_inprog">删除中</string>
+    <string name="dialog_title_add_comment">创建意见反馈</string>
+    <string name="dialog_title_add_food_note">添加备注</string>
+    <string name="dialog_title_modify_food_note">修改备注</string>
+    <string name="msg_comment_error">意见少于5个字符，请再写点，谢谢~</string>
+    <string name="msg_food_note_error">备注为空，请正确输入，谢谢~</string>
+    <string name="msg_contact_error">请输入正确的联系方式</string>
+    <string name="msg_add_succ">意见发送成功，非常感谢，我们会尽快联系您~</string>
+    <string name="msg_no_comment">亲爱的用户，您的任何意见都是我们前进的动力，欢迎您主动联系我们~</string>
+    <string name="dialog_confirm_del_addr_title">删除收餐地址</string>
+    <string name="dialog_confirm_del_addr_content">确认删除收餐地址吗？</string>
+    <string name="dialog_confirm_del_comm_title">删除意见反馈</string>
+    <string name="dialog_confirm_del_comm_content">确认删除意见反馈吗？</string>
+    <string name="dialog_logout">退出账户</string>
+    <string name="dialog_logout_inprog">退出账户中</string>
+    <string name="dialog_shipping_address_create">新建收餐地址</string>
+    <string name="dialog_shipping_address_modify">修改收餐地址</string>
+    <string name="dialog_title_user_login">用户登录</string>
+    <string name="dialog_title_change_user_name">修改用户名</string>
+    <string name="dialog_title_change_pass">修改密码</string>
+    <string name="msg_pass_empty">密码不能为空</string>
+    <string name="msg_pass_not_same">两次输入密码不一致</string>
+    <string name="msg_pass_change_succ">密码修改成功~</string>
+    <string name="msg_pass_change_fail">抱歉，密码暂时无法修改，请稍候重试</string>
+    <string name="error_msg_cart_empty">购物车为空，请先选择美食~</string>
+    <string name="money">¥%1$s</string>
+    
+    <string name="order_detail_id">订单编号：</string>
+    <string name="order_detail_create_time">下单时间：</string>
+    <string name="order_detail_finish_time">完成时间：</string>
+    <string name="order_detail_close_time">关闭时间：</string>
+    <string name="order_detail_close_reason">关闭原因：</string>
+    <string name="order_detail_delivered_time">收餐时间：</string>
+    <string name="order_detail_state">订单状态：</string>
+    <string name="order_detail_pay_type">支付方式：</string>
+    
+    <string name="order_detail_use_score">使用积分：</string>
+    <string name="order_detail_score_discount">节省：</string>
+    <string name="order_detail_real_pay">实际支付：</string>
+    <string name="order_detail_shipping_fee">配送费：</string>
+    <string name="order_detail_receiver">收餐人：</string>
+    <string name="order_detail_address">收餐地址：</string>
+    
+    <string name="mine_menu_shipping_address">管理收餐地址</string>
+    <string name="mine_menu_favorite">我的收藏</string>
+    <string name="mine_menu_upgrade">检测更新</string>
+    <string name="mine_menu_service_call">客服电话</string>
+    <string name="mine_menu_comment">意见反馈</string>
+    <string name="mine_menu_about">关于</string>
+    
+    <string name="mine_txt">我</string>
+    <string name="service_people_txt">客服</string>
+    <string name="no_feedback_default_text">感谢您的关注，客服稍候回复您~</string>
+    <string name="mmwd_introduction">妈妈味道介绍</string>
+    
+    <string name="prev_page">上一页</string>
+    <string name="next_page">下一页</string>
+    
+    <string name="cell_phone_login">手机号快捷登录</string>
+    <string name="user_already_login">用户%1$s已登录</string>
+    <string name="forget_pass">忘记密码</string>
+    <string name="user_score">当前积分：%1$s</string>
+    <string name="change_pass">修改密码</string>
+    <string name="change_phone">更换绑定手机</string>
+    <string name="binded_phone">已绑定手机号：%1$s</string>
+    <string name="change_binded_phone_succ">绑定手机更换成功~</string>
+    <string name="change_binded_phone_fail">抱歉，暂时无法更换绑定手机，请稍后重试~</string>
+    <string name="find_current_zone_inprog">正在确定当前区域，请稍候~</string>
+    
+    <string name="select_zone">选择区域</string>
+    
+    <string name="diag_logout_title">退出登录</string>
+    <string name="diag_logout_content">确定退出登录吗？</string>
+    <string name="msg_logout_succ">已经退出账户</string>
+    <string name="msg_logout_fail">退出账户失败，请稍候重试！</string>
+    <string name="msg_login_user_name_pass_empty">用户名或密码不能为空</string>
+    <string name="msg_login_error">登录失败，用户名或密码错误~</string>
+    <string name="msg_login_succ">登录成功</string>
+    <string name="msg_user_name_empty">请输入正确的用户名</string>
+    <string name="msg_user_name_same">与现有用户名相同</string>
+    
+    
+    <string name="msg_no_shipping_address">您没有任何收餐地址，请创建一个吧~</string>
+    <string name="msg_no_shipping">抱歉，当前区域暂不支持配送~</string>
+        <string name="msg_no_community">抱歉，您未选择所处片区，不能创建地址</string>
+        <string name="msg_no_phone">抱歉，电话未填写，不能创建地址</string>
+        <string name="msg_no_addr">抱歉，收餐地址未填写，不能创建地址</string>
+        <string name="msg_del_fail">抱歉，删除失败，请稍后重试~</string>
+    <string name="msg_add_fail">抱歉，创建失败，请稍后重试~</string>
+    <string name="msg_mod_fail">抱歉，修改失败，请稍后重试~</string>
+    <string name="msg_del_addr_inprog">正在删除收餐地址，请稍候~</string>
+    
+    <string name="msg_order_no_food">抱歉，当前数量不足~</string>
+
+     
+     <string name="dialog_clear_cart_title">清空购餐车</string>
+     <string name="dialog_clear_cart_content">确认清空吗？清空后不可恢复</string>
+     <string name="btn_click_to_refresh">点击刷新</string>
+     <string name="dialog_clear_food_title">删除菜品</string>
+     <string name="dialog_clear_food_content">确认删除%1$s吗？</string>
+     
+     <string name="msg_no_favorite_mmshop">您当前没有任何收藏哦~</string>
+     
+     <string name="msg_favorite_mmshop_succ">已添加收藏</string>
+     <string name="msg_favorite_mmshop_fail">添加收藏失败，请稍候重试</string>
+     
+     <string name="msg_unfavorite_mmshop_succ">已删除收藏</string>
+     <string name="msg_unfavorite_mmshop_fail">删除收藏失败，请稍候重试</string>
+     
+     <string name="msg_no_mmshop">抱歉，妈妈餐厅不存在~</string>
+     <string name="msg_mmshop_detail_no_food">抱歉，暂无上架菜品，妈妈休息中~</string>
+     <string name="msg_mmshop_detail_no_not_on_food">暂无未上架菜品~</string>
+     <string name="msg_wanted_fail">抱歉，一天只能表达一次请求哦~</string>
+     <string name="msg_wanted_succ">已经收到您的请求啦，%1$s会很快上架的~</string>
+     <string name="msg_not_logined">您还未登陆，请首先登陆~</string>
+     <string name="msg_invalid_phone">手机号码不合法，请输入正确的手机号~</string>
+     <string name="msg_invalid_pass">请输入正确的密码~</string>
+     <string name="msg_invalid_code">验证码不正确，请输入正确的验证码</string>
+     <string name="msg_send_vcode_error">发送验证码错误，请稍后重试~</string>
+     <string name="msg_send_vcode_succ">已发送验证码，请注意查收~</string>
+     <string name="vcode_second_down">获取验证码(%1$s)</string>
+     
+     <string name="msg_no_new">暂没有更新~</string>
+     <string name="msg_no_more">亲，没有更多了~</string>
+     <string name="hint_input_new_phone">请输入新手机号码</string>
+          <string name="msg_no_open_order">您当前没有未完成订单哦~</string>
+          <!-- order -->
+     <string name="msg_order_addr_empty">收餐地址为空，请先指定收餐地址~</string>
+     <string name="msg_order_pay_type_empty">请选择支付方式~</string>
+      <string name="msg_order_food_empty">您还未选餐，请先选择美食~</string>
+     <string name="msg_order_submitting">订单提交中...</string>
+     <string name="msg_order_paying">支付中...</string>
+     <string name="msg_submit_order_succ">恭喜您，订单提交成功~</string>
+     <string name="msg_order_submit_fail">抱歉，订单提交失败，请稍后重试~</string>
+     
+     <string name="diag_info_pay_succ">恭喜您，支付成功~</string>
+     <string name="diag_info_pay_inprog">支付中...</string>
+     <string name="diag_info_pay_fail">抱歉，支付失败，请重新支付</string>
+     <string name="msg_submitting_no_order">订单正在提交中，暂不能订餐~</string>
+     <string name="msg_submitting_no_clean">订单正在提交中，暂不能清空~</string>
+     <string name="msg_submitting_no_delete">订单正在提交中，暂不能删除菜品~</string>
+     
+     <string name="find_new_version">发现新版本%1$s</string>
+     <string name="resting">(休息中)</string>
+     <string name="not_provided">(未上架)</string>
+     <string name="msg_checking">检查中...</string>
+     
+     <string name="add_food_note_hint">您捎给%1$s的话...</string>
+</resources>

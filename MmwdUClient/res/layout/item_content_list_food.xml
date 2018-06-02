@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_list_food"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/medium_margin"
+    android:paddingRight="@dimen/medium_margin" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_transparent_to_half"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/medium_margin"
+        android:paddingTop="@dimen/medium_margin" >
+
+        <ImageView
+            android:id="@+id/food_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/medium_margin" >
+
+            <TextView
+                android:id="@+id/food_cross_area"
+                style="@style/SmallLittleBlackText"
+                android:layout_alignBottom="@+id/food_name_zone"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_pink_btn_with_red_border"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="全城配送"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/food_reservable"
+                style="@style/SmallLittleBlackText"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/food_cross_area"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_pink_btn_with_red_border"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="需预定"
+                android:layout_height="20dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:id="@+id/food_name_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/food_name"
+                    style="@style/NormalText"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:text="@string/default_text" />
+
+                
+
+                    <RelativeLayout
+                        android:id="@+id/food_zan_zone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_white_with_grey_border"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/food_zan_img"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_margin="1.5dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_like_normal" />
+
+                        <TextView
+                            android:id="@+id/food_zan"
+                            android:layout_toRightOf="@id/food_zan_img"
+                            style="@style/MediumLittleBlackText"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="100" />
+                    </RelativeLayout>
+                
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/food_desc"
+                style="@style/MediumGreyText"
+                android:layout_below="@id/food_name_zone" />
+
+            <LinearLayout
+                android:id="@+id/food_price_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/small_margin"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/food_price_title"
+                    style="@style/NormalText"
+                    android:text="@string/food_price_title" />
+
+                <TextView
+                    android:id="@+id/food_price"
+                    style="@style/NormalText"
+                    android:textColor="@color/main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/food_rest_zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/food_price_zone"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/food_rest_title"
+                    style="@style/NormalText"
+                    android:text="@string/food_amount_title" />
+
+                <TextView
+                    android:id="@+id/food_rest"
+                    style="@style/NormalText"
+                    android:textColor="@color/main_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/submit_info_amount_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <Button
+                    android:id="@+id/submit_info_amount_dec"
+                    android:layout_width="26.0dip"
+                    android:layout_height="26.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/submit_btn_dec_selector" />
+
+                <EditText
+                    android:id="@+id/submit_info_amount_edit"
+                    android:layout_width="30.0dip"
+                    android:layout_height="26.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@drawable/submit_input"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minWidth="54.0dip"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/text_black"
+                    android:textSize="15.0sp" />
+
+                <Button
+                    android:id="@+id/submit_info_amount_inc"
+                    android:layout_width="26.0dip"
+                    android:layout_height="26.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/submit_btn_inc_selector" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/food_want_eat_text"
+                android:layout_width="74dp"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_want_eat"
+                android:gravity="center_horizontal|bottom"
+                android:text="12"
+                android:textColor="@color/main_color"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/food_want_eat_loading"
+                android:layout_width="74dp"
+                android:layout_height="39dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal|bottom"
+                android:indeterminateDrawable="@drawable/main_loading"
+                android:minHeight="25.0dip"
+                android:minWidth="25.0dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dash_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dash_line_orange"
+        android:layerType="software" />
+
+</LinearLayout>

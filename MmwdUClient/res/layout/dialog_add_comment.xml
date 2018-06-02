@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_dark"
+    android:orientation="vertical" >
+
+    <include layout="@layout/dialog_top_title" />
+
+    <TextView
+        style="@style/NormalText"
+        android:layout_margin="10dp"
+        android:maxLines="3"
+        android:singleLine="false"
+        android:text="妈妈味道感谢您的关注，虚心接受您宝贵的批评与意见，努力为您改正~" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_margin"
+        android:background="@color/background"
+        android:orientation="vertical" >
+
+        <include layout="@layout/divider_line_horizontal" />
+
+        <EditText
+            android:id="@+id/comment_input_text"
+            android:layout_width="fill_parent"
+            android:layout_height="150.0dip"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="请输入您的宝贵意见(500字以内)"
+            android:inputType="textMultiLine"
+            android:maxLength="500"
+            android:minHeight="150.0dip"
+            android:paddingTop="8.0dip"
+            android:textColorHint="#ff888888"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/word_total_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|center"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:text="1/500"
+            android:textColor="#ff666666"
+            android:textSize="12.0sp" />
+
+        <include layout="@layout/divider_line_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical" >
+
+        <include layout="@layout/divider_line_horizontal" 
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/comment_phone_input_text"
+            android:layout_width="fill_parent"
+            android:layout_height="39.0dip"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入您的电话或邮箱~"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="12.0dip"
+            android:textColorHint="#ff888888"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <include layout="@layout/divider_line_horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/dialog_bottom_ok_cancel" />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/dialog_top_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:gravity="center_vertical"
+        android:padding="@dimen/normal_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/medium_margin" >
+            <TextView
+                style="@style/NormalText"
+                android:text="当前积分："/>
+            <TextView
+                android:id="@+id/use_score_current"
+                style="@style/NormalText"
+                android:text="100" />
+            
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/normal_margin" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/medium_margin" >
+            <TextView
+                style="@style/NormalText"
+                android:text="使用积分："/>
+            <Button
+            android:id="@+id/submit_info_amount_dec"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/submit_btn_dec_selector" />
+
+        <EditText
+            android:id="@+id/submit_info_amount_edit"
+            android:layout_width="50.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:background="@drawable/submit_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:minWidth="54.0dip"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/text_black"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@+id/submit_info_amount_inc"
+            android:layout_width="26.0dip"
+            android:layout_height="26.0dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/submit_btn_inc_selector" />
+            
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_horizontal" />
+    </LinearLayout>
+    
+    
+    <include layout="@layout/dialog_bottom_ok_cancel"/>
+</LinearLayout>

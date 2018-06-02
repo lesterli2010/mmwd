@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.blb.mmwd.uclient.ui.LocationManuallyActivity" >
+
+    <include layout="@layout/app_top_caption" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/sel_city_district_zone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <include layout="@layout/zone_message" />
+
+            <LinearLayout
+                android:id="@+id/sel_city_district_main_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/sel_city_districts_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/abc_list_divider_holo_light"
+                    android:footerDividersEnabled="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abc_list_divider_holo_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/divider_line_vertical"/>
+        <LinearLayout
+            android:id="@+id/sel_city_zone_zone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/NormalText"
+                android:text="@string/select_zone"
+                android:textColor="@color/main_color"
+                android:layout_margin="@dimen/normal_margin"/>
+            <include layout="@layout/divider_line_horizontal"/>
+            
+            <include layout="@layout/zone_message" />
+
+            <LinearLayout
+                android:id="@+id/sel_city_zone_main_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/sel_city_zone_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/abc_list_divider_holo_light"
+                    android:footerDividersEnabled="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abc_list_divider_holo_light" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

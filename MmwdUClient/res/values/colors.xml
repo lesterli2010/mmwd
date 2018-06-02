@@ -1,0 +1,33 @@
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="background">#fffdfdfd</color>
+    <color name="background_dark">#ffeeeeee</color>
+    <color name="background_dark_1">#cccccc</color>
+    <color name="background_dark_2">#bbbbbb</color>
+    <color name="background_pink">#fff2e9</color>
+    <color name="main_color">#fa531f</color>
+    <color name="orange_dash_line_color">#fadac0</color>
+
+    <color name="text_white">#fdfdfd</color>
+    <color name="text_black">#ff111111</color>
+    <color name="text_little_black">#ff333333</color>
+    <color name="text_grey">#ffCCCCCC</color>
+    <color name="text_deep_orange">#de230a</color>
+    <color name="text_blue">#177CD6</color>
+    <color name="edit_text_hint_color">#ffb1b1b1</color>
+    <color name="gray_dark">#ffb3b3b3</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#2D000000</color>
+    <color name="dialog_main">#ff3385ff</color>
+    
+    <color name="background_settle_bar">#e2e1df</color>
+
+    <drawable name="dialog_main">@color/dialog_main</drawable>
+    <drawable name="background_dark">@color/background_dark</drawable>
+    <drawable name="background">@color/background</drawable>
+    <drawable name="background_dark_1">@color/background_dark_1</drawable>
+        <drawable name="background_dark_2">@color/background_dark_2</drawable>
+    <drawable name="transparent">@android:color/transparent</drawable>
+    <drawable name="transparent_half">@color/transparent_half</drawable>
+    
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/notify_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/notify_logo"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+
+        <TextView
+            android:id="@+id/notify_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/default_text"
+            android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/notify_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/notify_download_succ_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载已完成，点击进行安装"
+        android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/notify_download_fail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载失败，请点击用浏览器下载安装"
+        android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent"
+        android:visibility="gone" />
+
+</LinearLayout>

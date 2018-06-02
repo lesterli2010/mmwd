@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/dialog_top_title"/>
+    <TextView
+        android:id="@+id/confirmation_content"
+        android:layout_margin="10dp"
+        style="@style/NormalText"
+        android:singleLine="false"
+        android:maxLines="3"
+        android:text="@string/default_text"
+        />
+    <include layout="@layout/dialog_bottom_ok_cancel" />
+
+</LinearLayout>

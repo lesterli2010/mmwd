@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/dialog_top_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp" >
+
+            <EditText
+                android:layout_alignParentLeft="true"
+                android:id="@+id/dialog_edt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="输入新手机号码"
+                android:inputType="phone"
+                android:padding="12.0dip"
+                android:singleLine="true"
+                android:textColor="#ff434343"
+                android:textColorHint="@color/edit_text_hint_color"
+                android:textSize="16.0sp" />
+
+            <Button
+                style="@style/BtnStyle1"
+                android:layout_alignBottom="@+id/dialog_edt_phone"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/medium_margin"
+                android:text="获取验证码" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line_horizontal" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp" >
+
+            <EditText
+                android:id="@+id/dialog_edt_verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:hint="输入验证码"
+                android:inputType="phone"
+                android:padding="12.0dip"
+                android:singleLine="true"
+                android:textColor="#ff434343"
+                android:textColorHint="@color/edit_text_hint_color"
+                android:textSize="16.0sp" />
+
+        <include layout="@layout/divider_line_horizontal" />
+    </LinearLayout>
+    <include layout="@layout/dialog_bottom_ok_cancel"/>
+</LinearLayout>

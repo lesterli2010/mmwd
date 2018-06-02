@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/medium_margin"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/dialog_info_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/main_loading"
+            android:minHeight="32.0dip"
+            android:minWidth="32.0dip"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/dialog_info_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_pay_status_success" />
+
+        <TextView
+            android:id="@+id/dialog_info_text"
+            style="@style/LargeText"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:text="恭喜您，支付成功" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
+        
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!--
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+    -->
+    <style name="DialogTheme" parent="android:Theme">
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DefaultBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/normal_margin</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+    
+    <style name="BtnStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/normal_margin</item>
+        <item name="android:background">@drawable/bg_button_1</item>
+        <item name="android:textColor">@color/button_text_color_1</item>
+    </style>
+
+    <style name="RedBtn" parent="@style/DefaultBtn">
+        <item name="android:background">@drawable/bg_red_button</item>
+    </style>
+
+    <style name="YellowBtn" parent="@style/DefaultBtn">
+        <item name="android:background">@drawable/bg_yellow_button</item>
+    </style>
+
+    <style name="PinkBtn" parent="@style/DefaultBtn">
+        <item name="android:background">@drawable/bg_pink_button</item>
+    </style>
+
+    <style name="SplashTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    
+    <style name="DefaultText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    <style name="BlackText" parent="@style/DefaultText">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <!-- For normal font -->
+    <style name="LargeText" parent="@style/BlackText">
+        <item name="android:textSize">@dimen/large_text</item>
+    </style>
+
+    <style name="NormalText" parent="@style/BlackText">
+        <item name="android:textSize">@dimen/normal_text</item>
+    </style>
+
+    <style name="MediumText" parent="@style/BlackText">
+        <item name="android:textSize">@dimen/medium_text</item>
+    </style>
+    
+    <style name="SmallText" parent="@style/BlackText">
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+    <style name="NormalLittleBlackText" parent="@style/NormalText">
+        <item name="android:textColor">@color/text_little_black</item>
+    </style>
+    
+    <style name="MediumLittleBlackText" parent="@style/MediumText">
+        <item name="android:textColor">@color/text_little_black</item>
+    </style>
+    <style name="SmallLittleBlackText" parent="@style/SmallText">
+        <item name="android:textColor">@color/text_little_black</item>
+    </style>
+    
+    <style name="MediumGreyText" parent="@style/MediumText">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+    <style name="SmallGreyText" parent="@style/SmallText">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+    
+    <!-- For dialog txt btn on bottom -->
+
+    <style name="DialogBottomTxtBtn" parent="@style/LargeText">
+        <item name="android:background">@drawable/bg_dialog_bottom_txtbtn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    
+    <style name="NormalClickableView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_normal_dark</item>
+        <item name="android:clickable">true</item> 
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    <style name="NormalClickableViewTxtBtn" parent="@style/NormalClickableView">
+        <item name="android:textColor">@color/text_little_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+</resources>

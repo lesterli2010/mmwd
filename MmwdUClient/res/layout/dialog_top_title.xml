@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_pink_with_grey_border"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/LargeText"
+        android:padding="@dimen/normal_margin"
+        android:text="@string/default_text"
+        android:textColor="@color/main_color"
+        android:drawablePadding="@dimen/medium_margin" />
+
+</LinearLayout>

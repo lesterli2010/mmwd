@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_top_caption" />
+
+    <include layout="@layout/zone_message" />
+
+    <LinearLayout
+        android:id="@+id/food_detail_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pink_with_pink_border"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/mm_shop_name_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_transparent_to_half"
+                android:orientation="horizontal"
+                android:padding="@dimen/medium_margin" >
+
+                <ImageView
+                    android:id="@+id/mm_shop_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/mm_shop_name"
+                    style="@style/LargeText"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/normal_margin" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/item_content_list_food" />
+
+        <WebView
+            android:id="@+id/food_detail_web"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+        <include
+            layout="@layout/bar_order_settlement"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

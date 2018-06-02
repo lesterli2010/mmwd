@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <include layout="@layout/app_top_caption" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                layout="@layout/zone_order_items" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:background="@drawable/bg_pink_with_pink_border"
+                android:padding="@dimen/medium_margin" >
+
+                <ImageView
+                    android:id="@+id/order_detail_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_order_detail" />
+
+                <TextView
+                    style="@style/NormalText"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/medium_margin"
+                    android:layout_toRightOf="@+id/order_detail_icon"
+                    android:text="订单详情"
+                    android:textColor="@color/main_color" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/order_detail_attribute_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:background="@drawable/bg_white_no_top_border"
+                android:orientation="vertical" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin" >
+
+                <Button
+                    android:id="@+id/re_pay_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="0dp"
+                    android:text="重新支付"
+                    android:textSize="@dimen/normal_text"
+                    android:background="@drawable/bg_button_1"
+                    android:textColor="@color/button_text_color_1"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/service_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:background="@drawable/bg_button_1"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="0dp"
+                    android:text="申请售后"
+                    android:textColor="@color/button_text_color_1"
+                    android:textSize="@dimen/normal_text" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settlement_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_settle_bar" >
+
+    <TextView
+        android:id="@+id/total_amount_title"
+        style="@style/LargeText"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:text="总金额:" />
+
+    <TextView
+        android:id="@+id/total_amount"
+        style="@style/LargeText"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/total_amount_title"
+        android:textColor="@color/text_deep_orange" />
+
+    <ImageButton
+        android:id="@+id/settlement_clear_btn"
+        android:layout_width="24.8dp"
+        android:layout_height="25.6dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/large_margin"
+        android:background="@drawable/ic_trash_button"
+        android:paddingLeft="@dimen/large_margin" />
+
+    <Button
+        android:id="@+id/settlement_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_toLeftOf="@id/settlement_clear_btn"
+        android:background="@drawable/bg_pink_button"
+        android:paddingLeft="@dimen/large_margin"
+        android:paddingRight="@dimen/large_margin"
+        android:text="结算"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/normal_text" />
+
+</RelativeLayout>

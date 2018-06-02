@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_top_caption" />
+
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/zone_message" />
+
+    <ListView
+        android:id="@+id/shipping_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/medium_margin"
+        android:layout_weight="1"
+        android:divider="@drawable/abc_list_divider_holo_light"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/add_new_shipping_address"
+        style="@style/YellowBtn"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/medium_margin"
+        android:text="@string/add_new_shipping_address" />
+
+</LinearLayout>

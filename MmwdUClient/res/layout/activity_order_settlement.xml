@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <include layout="@layout/app_top_caption" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/order_shipping_address_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/medium_margin"
+                android:background="@drawable/bg_white_with_pink_border"
+                android:indeterminateDrawable="@drawable/main_loading"
+                android:minHeight="25.0dip"
+                android:minWidth="25.0dip"
+                android:padding="@dimen/normal_margin"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/order_shipping_address_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_margin"
+                android:background="@drawable/bg_white_with_pink_border" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/bg_transparent_to_half"
+                    android:padding="@dimen/normal_margin"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/order_address_zone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <TextView
+                            android:id="@+id/order_address_phone"
+                            style="@style/NormalText"
+                            android:text="@string/default_text" />
+
+                        <TextView
+                            android:id="@+id/order_address_detail"
+                            style="@style/NormalText"
+                            android:text="@string/default_text" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/order_create_address_text"
+                        style="@style/NormalText"
+                        android:paddingBottom="@dimen/normal_margin"
+                        android:paddingTop="@dimen/normal_margin"
+                        android:text="@string/order_create_address"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/daren_middle_more" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- order food detail -->
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/zone_message" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                layout="@layout/zone_order_items" />
+            
+            <!-- shipping fee zone -->
+            <LinearLayout
+                android:id="@+id/shipping_fee_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:background="@drawable/bg_white_with_pink_border"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/shipping_fee_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    
+                    android:paddingBottom="@dimen/normal_margin"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="@dimen/normal_margin" >
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminateDrawable="@drawable/main_loading"
+                        android:layout_gravity="center_vertical"
+                        android:minHeight="25.0dip"
+                        android:minWidth="25.0dip"
+                        android:padding="@dimen/medium_margin" />
+
+                    <TextView
+                        style="@style/LargeText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:text="配送费计算中..." />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/shipping_fee_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    
+                    android:paddingBottom="@dimen/normal_margin"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="@dimen/normal_margin"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/LargeText"
+                        android:layout_gravity="center_vertical"
+                        android:text="配送费:" />
+                    <TextView
+                        android:id="@+id/shipping_fee_amount"
+                        style="@style/LargeText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:textColor="@color/main_color"
+                        android:text="10" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <!-- pay method -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:layout_marginLeft="@dimen/medium_margin"
+                android:layout_marginRight="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:background="@drawable/bg_white_with_pink_border"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/select_pay_cod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_transparent_to_half"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/normal_margin"
+                    android:paddingLeft="@dimen/medium_margin"
+                    android:paddingRight="@dimen/medium_margin"
+                    android:paddingTop="@dimen/normal_margin"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/select_pay_cod_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/checkbox_checked_normal" />
+
+                    <TextView
+                        style="@style/LargeText"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/medium_margin"
+                        android:text="货到付款" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/abc_list_divider_holo_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/select_pay_alipay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_transparent_to_half"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/medium_margin"
+                        android:paddingLeft="@dimen/medium_margin"
+                        android:paddingRight="@dimen/medium_margin"
+                        android:paddingTop="@dimen/normal_margin"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/select_pay_alipay_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/checkbox_uncheck_normal" />
+
+                        <TextView
+                            style="@style/LargeText"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/medium_margin"
+                            android:text="支付宝支付" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_use_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/normal_margin"
+                        android:paddingLeft="@dimen/medium_margin"
+                        android:paddingRight="@dimen/medium_margin"
+                        android:visibility="gone" >
+
+                        <RelativeLayout
+                            android:id="@+id/order_use_score_open_dialog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_transparent_to_half"
+                            android:visibility="visible" >
+
+                            <TextView
+                                style="@style/LargeText"
+                                android:paddingBottom="@dimen/medium_margin"
+                                android:paddingTop="@dimen/medium_margin"
+                                android:text="使用积分折扣"
+                                android:textColor="@color/main_color" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/daren_middle_more" />
+                        </RelativeLayout>
+
+                        <ProgressBar
+                            android:id="@+id/order_use_score_info_loading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/medium_margin"
+                            android:background="@drawable/bg_white_with_pink_border"
+                            android:indeterminateDrawable="@drawable/main_loading"
+                            android:minHeight="25.0dip"
+                            android:minWidth="25.0dip"
+                            android:padding="@dimen/normal_margin"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/order_use_score_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/NormalText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="使用积分：" />
+
+                                <TextView
+                                    android:id="@+id/order_use_score_count"
+                                    style="@style/NormalText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="0" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/NormalText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="节省：" />
+
+                                <TextView
+                                    android:id="@+id/order_use_score_discount"
+                                    style="@style/NormalText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="0" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    style="@style/NormalText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="实际支付：" />
+
+                                <TextView
+                                    android:id="@+id/order_use_score_need_pay"
+                                    style="@style/NormalText"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="100" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- payment btn -->
+
+            <Button
+                android:id="@+id/submit_order_btn"
+                style="@style/RedBtn"
+                android:layout_width="match_parent"
+            android:layout_margin="@dimen/medium_margin"
+                android:text="@string/submit_order" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

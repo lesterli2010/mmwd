@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.blb.mmwd.uclient.ui.FteActivity" >
+
+    <TextView
+        style="@style/NormalText"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        android:text="此为第一次安装后的FTE页面，通常为多个图片轮播，作为广告形象宣传" />
+
+    <Button
+        android:id="@+id/enter_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="进入主页面" />
+
+</RelativeLayout>

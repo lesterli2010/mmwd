@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_mm_shop"
+    style="@style/NormalClickableViewTxtBtn"
+    android:background="@drawable/bg_normal_dark"
+    android:padding="@dimen/normal_margin" >
+
+    <ImageView
+        android:id="@+id/favorited_mm_shop_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_mm_shop" />
+
+    <TextView
+        android:id="@+id/favorited_mm_shop_img_name"
+        style="@style/NormalText"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_toRightOf="@id/favorited_mm_shop_img"
+        android:text="李沧妈妈1" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+    <ImageView
+        android:id="@+id/favorited_mm_shop_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_favorited" />
+
+    <ProgressBar
+        android:id="@+id/favorited_mm_shop_action_loading"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:indeterminateDrawable="@drawable/main_loading"
+        android:minHeight="35.0dip"
+        android:minWidth="35.0dip"
+        android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

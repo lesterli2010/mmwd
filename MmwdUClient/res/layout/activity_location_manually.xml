@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.blb.mmwd.uclient.ui.LocationManuallyActivity" >
+
+    <include layout="@layout/app_top_caption" />
+
+    <LinearLayout
+        android:id="@+id/loc_man_current_addr_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            style="@style/LargeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:background="@color/background_pink"
+            android:padding="@dimen/normal_margin"
+            android:text="@string/current_addr" />
+        <TextView
+                android:id="@+id/loc_man_current_addr_text"
+                style="@style/NormalText"
+                android:drawableLeft="@drawable/ic_location"
+                android:layout_marginBottom="@dimen/medium_margin"
+                android:drawablePadding="@dimen/medium_margin" />
+
+        <Button
+            style="@style/BtnStyle1"
+            android:id="@+id/loc_man_locate_btn"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:text="@string/location_to_current"
+            android:textSize="@dimen/medium_text"
+            android:textColor="@color/main_color" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/loc_man_located_city_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            style="@style/LargeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:background="@color/background_pink"
+            android:padding="@dimen/normal_margin"
+            android:text="@string/located_city" />
+
+        <Button
+            style="@style/BtnStyle1"
+            android:id="@+id/loc_man_located_city"
+            android:paddingLeft="@dimen/medium_margin"
+            android:paddingRight="@dimen/medium_margin"
+            android:text="@string/location_to_current" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/LargeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/large_margin"
+            android:background="@color/background_pink"
+            android:padding="@dimen/normal_margin"
+            android:text="@string/hot_city" />
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_list_divider_holo_light" />
+        <ListView
+        android:id="@+id/loc_man_hot_city_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:divider="@drawable/abc_list_divider_holo_light"
+        android:footerDividersEnabled="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/abc_list_divider_holo_light" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/menu_name"
+        style="@style/LargeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:focusable="false"
+        android:paddingBottom="@dimen/normal_margin"
+        android:paddingTop="@dimen/normal_margin"
+        android:paddingRight="20dp"
+        android:text="@string/default_text"
+        android:textColor="@color/simple_menu_text_color" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/zone_message" />
+
+    <LinearLayout
+        android:id="@+id/main_content_zone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/content_swipe_refresher"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/content_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+            
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <ProgressBar
+                android:id="@+id/content_list_more_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDrawable="@drawable/main_loading"
+                android:minHeight="25.0dip"
+                android:minWidth="25.0dip"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+        <include
+            layout="@layout/bar_order_settlement"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

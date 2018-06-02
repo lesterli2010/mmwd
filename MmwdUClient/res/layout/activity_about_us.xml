@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/app_top_caption" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/current_version"
+            style="@style/LargeText"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:text="当前版本: 1.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:background="@drawable/bg_white_with_grey_border"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/about_us_check_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/bg_normal_dark"
+            android:padding="@dimen/normal_margin" >
+
+            <ImageView
+                android:id="@+id/about_us_upgrade_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mine_menu_upgrade" />
+
+            <TextView
+                style="@style/LargeText"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_toRightOf="@id/about_us_upgrade_img"
+                android:text="@string/mine_menu_upgrade" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/daren_middle_more" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_list_divider_holo_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:paddingBottom="@dimen/normal_margin"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin" >
+
+            <RelativeLayout
+                android:id="@+id/about_us_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/about_us_introduction_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_introduction" />
+
+                <TextView
+                    android:id="@+id/about_us_introduction_title"
+                    style="@style/LargeText"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_toRightOf="@id/about_us_introduction_img"
+                    android:text="@string/mmwd_introduction" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/about_us_introduction_txt"
+                style="@style/MediumLittleBlackText"
+                android:layout_below="@id/about_us_title"
+                android:layout_marginTop="@dimen/large_margin"
+                android:maxLines="8"
+                android:singleLine="false"
+                android:text="“妈妈味道”团队是一群热爱生活，热爱美食，拥抱移动互联网的年轻人，坚信移动互联网能让生活更便捷。我们致力于发掘厨艺高超的邻家妈妈。只需动动手指，民间美食家的作品就会来敲你家门。" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

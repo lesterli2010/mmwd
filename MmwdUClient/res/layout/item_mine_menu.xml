@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_normal_dark"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/large_margin"
+    android:paddingBottom="@dimen/large_margin"
+    android:paddingLeft="@dimen/normal_margin" 
+    android:paddingRight="@dimen/normal_margin" >
+
+    <ImageView
+        android:id="@+id/mine_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_mine_menu_shipping_address" />
+
+    <TextView
+        android:id="@+id/mine_menu_name"
+        style="@style/NormalText"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_toRightOf="@id/mine_menu_icon"
+        android:layout_centerVertical="true"
+        android:text="管理收餐地址" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/daren_middle_more" />
+
+</RelativeLayout>
